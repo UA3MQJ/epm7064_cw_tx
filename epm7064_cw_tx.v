@@ -1,14 +1,11 @@
-module epm7064_test(clk, out_clk, out_lf, out_rf);
+module epm7064_cw_tx(clk, out_lf, out_rf);
 input wire clk;
-output wire [4:0] out_clk;
 output wire out_lf;
 output wire out_rf;
 
 reg [28:0] cnt; initial cnt <= 24'd0;
 
 always @(posedge clk) cnt <= cnt + 1'b1;
-
-assign out_clk = cnt[23:19];
 
 wire [4:0] hi_bits = cnt[26:26-4];
 

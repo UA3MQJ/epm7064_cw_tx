@@ -38,24 +38,18 @@
 
 set_global_assignment -name FAMILY MAX7000S
 set_global_assignment -name DEVICE "EPM7064SLC44-10"
-set_global_assignment -name TOP_LEVEL_ENTITY epm7064_test
+set_global_assignment -name TOP_LEVEL_ENTITY epm7064_cw_tx
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 11.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:47:33  NOVEMBER 06, 2016"
 set_global_assignment -name LAST_QUARTUS_VERSION 11.1
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 44
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 10
 set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
-set_global_assignment -name VERILOG_FILE epm7064_test.v
+set_global_assignment -name VERILOG_FILE epm7064_cw_tx.v
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS OUTPUT DRIVING GROUND"
 set_global_assignment -name MAX7000_DEVICE_IO_STANDARD TTL
 set_location_assignment PIN_2 -to clk
-set_location_assignment PIN_4 -to out_clk
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS OUTPUT DRIVING AN UNSPECIFIED SIGNAL"
 set_global_assignment -name DEVICE_FILTER_PACKAGE ANY
-set_location_assignment PIN_24 -to out_clk[0]
-set_location_assignment PIN_25 -to out_clk[1]
-set_location_assignment PIN_26 -to out_clk[2]
-set_location_assignment PIN_27 -to out_clk[3]
-set_location_assignment PIN_28 -to out_clk[4]
 set_location_assignment PIN_21 -to out_lf
 set_location_assignment PIN_20 -to out_rf

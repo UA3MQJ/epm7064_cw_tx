@@ -3,7 +3,7 @@ input wire clk;
 output wire out_lf;
 output wire out_rf;
 
-reg [28:0] cnt; initial cnt <= 24'd0;
+reg [27:0] cnt; initial cnt <= 28'd0;
 
 always @(posedge clk) cnt <= cnt + 1'b1;
 
